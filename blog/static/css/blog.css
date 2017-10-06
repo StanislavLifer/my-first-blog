@@ -1,56 +1,64 @@
-h1 a {
-
-    color: #FCA205;
-    font-family: 'Lobster';
+.page-header{/*Стили, которые отвечают за шапку странички */
+    text-align: center;/* Размищенние текста в шапке странички*/
+    font-family: Lobster;/*Шрифт*/
 }
-body {
-    padding-left: 15px;
-    padding-right: 15px;
+a:hover{/*Псевдокласс :Hover опредиляет стиль элемента при навидении на него курсором мыши*/ 
+    text-decoration: none;/*Добавляет оформление текста в виде его подчеркивания*/
+    color: black;/*Цвет после навидения (мой костыль)*/
 }
-.page-header {
-    text-align: center;
-    background-color: #9932CC;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
+a{
+    color:black;
 }
-
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #d48c8c;
-    font-size: 36pt;
-    text-decoration: none;
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
 }
-
-.content {
-    margin-left: 40px;
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
 }
-
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
 }
-
-.date {
-    color: #828282;
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
 }
-
-.save {
-    float: right;
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
 }
-
-.post-form textarea, .post-form input {
-    width: 100%;
-}
-
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
-
-.post {
-    margin-bottom: 70px;
-}
-
-.post h1 a, .post h1 a:visited {
-    color: #000000;
 }
