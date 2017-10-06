@@ -49,7 +49,7 @@ a{
   bottom: -5px;
   left: 50%;
   background: black;
-  transition: .8s;
+  transition: .5s;
 }
 .menu-main a:hover:before, .menu-main .current:before {left: 0;}
 .menu-main a:hover:after, .menu-main .current:after {right: 0;}   
@@ -61,4 +61,11 @@ a{
   padding: 25px 0 20px; 
   margin: 0 30px;
 }
+}
+.right_aside {
+    padding: 15px 20px;
+    border-radius: 7px;
+    background-color: #EEEEEE;
+    margin-top: 30px;
+    text-align: center;
 }
