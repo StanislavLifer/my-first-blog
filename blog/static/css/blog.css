@@ -68,4 +68,9 @@ a{
     background-color: #EEEEEE;
     margin-top: 30px;
     text-align: center;
+    font-family: Ubuntu;
+    font-size: 20px;
+}
+.p{
+    text-decoration: inherit;
 }
