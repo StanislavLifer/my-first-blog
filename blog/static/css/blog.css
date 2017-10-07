@@ -62,15 +62,20 @@ a{
   margin: 0 30px;
 }
 }
-.right_aside {
-    padding: 15px 20px;
-    border-radius: 7px;
-    background-color: #EEEEEE;
-    margin-top: 30px;
+.Info{
     text-align: center;
+    background-color: #D2CCCC;
+    padding: 10px;
+    border-radius: 5px;
     font-family: Ubuntu;
     font-size: 20px;
 }
-.p{
-    text-decoration: inherit;
+.row{
+    margin-right:100px;
+    margin-left: 100px;
+}
+@media screen and (max-width:350px) {
+    .Info {
+        display: none;
+    }
 }
