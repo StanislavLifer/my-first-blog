@@ -69,12 +69,18 @@ a{
     border-radius: 5px;
     font-family: Ubuntu;
     font-size: 20px;
+    box-shadow: 0 0 10px;
 }
 .row{
     margin-right:100px;
     margin-left: 100px;
 }
 @media screen and (max-width:350px) {
+    .Info {
+        display: none;
+    }
+}
+@media screen and (max-width:500px) {
     .Info {
         display: none;
     }
