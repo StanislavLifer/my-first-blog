@@ -64,7 +64,7 @@ a{
 }
 .Info{
     text-align: center;
-    background-color: #D2CCCC;
+    background-color: #eeeeee;
     padding: 10px;
     border-radius: 5px;
     font-family: Ubuntu;
@@ -84,4 +84,12 @@ a{
     .Info {
         display: none;
     }
+}
+.cont{
+    font-family: Ubuntu;
+    text-align: right;
+    margin-right: 30px;
+}
+.cont1{
+    text-align: left;
 }

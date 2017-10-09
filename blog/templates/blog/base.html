@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="shortcut icon" href="favicon.png" />
     </head>
     <body>
     <div class="page-header">
@@ -30,6 +31,13 @@
                  <li>Программирование на языках PHP, C#, Java</li>
                  <li>Разработка интерфейсов и вёрстка с использованием HTML5/XHTML/CSS</li>
                  <li>Программирование на языке JavaScript</li>
+                 
+                 <div class="cont">
+                    Я в социальных сетях
+                 <a href="/"><img src="{% static 'img/facebook-logo.png' %}"></a>
+                 <a href="/"><img src="{% static 'img/instagram-logo.png' %}"></a>
+                 <a href="/"><img src="{% static 'img/twitter.png' %}"></a>
+                 </div>
                 </div>
             {% block content %}
             {% endblock %}
